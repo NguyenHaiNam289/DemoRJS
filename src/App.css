@@ -1,38 +1,124 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+.content{
+  width: 800px;
+  height: 600px;
+  margin: 6% 23%;
+  background-image: url(./nen.jfif);
+  border: 3px solid black;
+  filter: none;
+
+}
+.header{
+  width: 800px;
+  position: absolute;
+  height: 50px;
+}
+.header_left{
+  float: left;
+  width: 30%;
+}
+.header_left p{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 22px;
+  font-family: Sans-serif;
+  margin-top: 13px;
   color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  animation-name: color;
+  animation-duration: 10s;
+  animation-iteration-count: 100;
+}
+@keyframes color{
+  0%   {color: red;}
+  15%  {color: orange;}
+  30%  {color: yellow;}
+  45% {color: green;}
+  60% {color: rgb(2, 204, 255);}
+  85%{color: blue;}
+  100% {color: rgb(108, 0, 134);}
+}
+.header_right{
+  float: left;
+  padding-left: 205px;
+  margin: 2px;
+}
+button:hover{
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+li:nth-child(1) button{
+  font-size: 30px;
+  background-color:inherit;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.App-link {
-  color: #61dafb;
+li button{
+  font-size: 22px;
+  border: none;
+  background-color:inherit;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li:nth-child(3){
+  font-size: 22px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: white
+}
+li:nth-child(3) button:hover{
+  border: none;
+  background-color: white;
+  color: black;
+}
+li input{
+  font-size: 22px;
+  width: 70px;
+  padding: 0px 5px;
+  text-align: center;
+  border: none;
+}
+li input:focus{
+  outline-style: none;
+}
+li i{
+  background-color: inherit;
+}
+li{
+  list-style: none;
+  display:inline;
+  margin-left: 30px;
+}
+.footer{
+  width:760px;
+  position: absolute;
+  margin-top: 530px;
+  height: 60px;
+  opacity: 0.6;
+  margin-left: 20px;
+
+}
+.footer button{
+  background-color: rgb(73, 73, 73);
+  border: none;
+  color: white;
+  font-size: 29px;
+  width: 110px;
+  height: 100%;
+  border-radius: 5px;
+}
+#Pre_button{
+  margin-left: 540px;
+}
+.footer button:hover{
+  border: 3px solid white;
+
 }
